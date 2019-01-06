@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guess number game</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <style>
+    .win, .loose {
+    display: none;
+    text-align: center;
+    }
+    img{
+      width: 60%;
+    height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Number guesser game</h1>
+    <div id="game">
+      <p>Guess number between <span class="num-min">1</span> and <span class="num-max">10.</span>. You have 3 attempts. </p>
+      <input type="number" id="guess-input" placeholder="Enter your guess...">
+      <input type="submit" value="submit" id="guess-btn">
+      <p class="message"></p>
+      <div class="win">
+        <img src="img/congrats.gif">
+      </div>
+      <div class="loose">
+        <img src="img/game over.gif">
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
